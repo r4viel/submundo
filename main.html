@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nocturne & Crimson</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .vampire-font { font-family: 'Nosifer', cursive; }
+    .title-font { font-family: 'Cinzel', serif; }
+    .soft-shadow { text-shadow: 0 6px 18px rgba(0,0,0,0.7); }
+    .bat-flap { animation: flap 3s ease-in-out infinite; transform-origin: center; }
+    @keyframes flap { 0%{ transform: translateY(0) rotate(0deg);} 50%{ transform: translateY(-6px) rotate(-4deg);} 100%{ transform: translateY(0) rotate(0deg);} }
+    .glow { box-shadow: 0 0 18px rgba(255,0,0,0.14), inset 0 0 32px rgba(0,0,0,0.4); }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#2a0202] via-[#300506] to-[#120101] text-gray-100 font-serif">
+  <div class="container mx-auto px-6 py-12 max-w-4xl relative">
+    <!-- Decorative bats -->
+    <div class="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      <svg class="absolute left-4 top-6 w-28 opacity-70 bat-flap" viewBox="0 0 64 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 24 C10 8, 18 8, 26 24 C34 8, 42 8, 62 24 L62 28 L2 28 Z" fill="#0b0b0b"/>
+      </svg>
+      <svg class="absolute right-6 top-14 w-36 opacity-60 bat-flap" viewBox="0 0 64 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 24 C10 6, 20 6, 28 24 C36 6, 46 6, 62 24 L62 28 L2 28 Z" fill="#070707"/>
+      </svg>
+      <svg class="absolute left-1/2 top-0 transform -translate-x-1/2 w-48 opacity-40 bat-flap" viewBox="0 0 90 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 30 C16 4, 28 4, 42 30 C56 4, 68 4, 88 30 L88 36 L2 36 Z" fill="#0a0a0a"/>
+      </svg>
+    </div>
+
+    <div class="bg-black/40 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-red-900/30 glow">
+      <header class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center bg-red-900/70 border border-red-700">
+            <!-- Cross icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2v20M6 10h12" stroke="#f8e8e8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h1 class="vampire-font text-3xl tracking-wider text-red-50 soft-shadow">Nocturne & Crimson</h1>
+        </div>
+
+        <nav class="space-x-4 hidden md:block">
+          <a href="#about" class="px-3 py-1 title-font text-sm uppercase tracking-widest text-red-200/80 hover:text-white">Sobre</a>
+          <a href="#sigils" class="px-3 py-1 title-font text-sm uppercase tracking-widest text-red-200/80 hover:text-white">Sigilos</a>
+          <a href="#contact" class="px-3 py-1 title-font text-sm uppercase tracking-widest text-red-200/80 hover:text-white">Contato</a>
+        </nav>
+      </header>
+
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <section>
+          <h2 class="vampire-font text-5xl md:text-6xl text-red-50 leading-tight">Bem-vindo à Noite</h2>
+          <p class="mt-4 text-red-200/80 max-w-xl">Um refúgio escuro entre sombras e símbolos. Explore artefatos, sigilos e iconografia vampiresca — cuidadosamente curada para os que caminham ao luar.</p>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="https://www.instagram.com/thaig.sl?igsh=MTZiZ3A3NmR5bjlwMQ=="><button class="px-5 py-2 rounded-full border border-red-700 bg-red-800/60 hover:bg-red-800 title-font uppercase text-sm tracking-wider">Explorar o submundo de thaissa</button></a>
+            <button class="px-5 py-2 rounded-full border border-gray-600 bg-transparent hover:bg-red-900/30 text-sm">Assinar o Boletim</button>
+          </div>
+
+          <div class="mt-8 flex items-center gap-4 text-sm text-red-200/60">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M6 10h12" stroke="#ffefef" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <div class="font-semibold text-red-50">A Última Cerimônia</div>
+              <div class="text-xs">Disponível apenas sob a lua cheia.</div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="relative">
+          <div class="w-full h-64 md:h-80 rounded-xl overflow-hidden border border-red-800/30">
+            <!-- Occult sigils collage (SVG) -->
+            <svg viewBox="0 0 400 400" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="g" cx="50%" cy="30%" r="80%">
+                  <stop offset="0%" stop-color="#3b0303" stop-opacity="0.8" />
+                  <stop offset="100%" stop-color="#0b0202" stop-opacity="0.95" />
+                </radialGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#g)" />
+
+              <!-- Pentagram -->
+              <g transform="translate(200,180) scale(0.9)">
+                <circle r="110" fill="none" stroke="#4b0b0b" stroke-width="3" />
+                <path d="M0 -90 L34 -10 L110 -10 L50 30 L70 100 L0 60 L-70 100 L-50 30 L-110 -10 L-34 -10 Z" fill="rgba(0,0,0,0.0)" stroke="#6b0f0f" stroke-width="2"/>
+              </g>
+
+              <!-- Small crosses and sigils scattered -->
+              <g fill="#2b0707" opacity="0.9">
+                <rect x="28" y="300" width="10" height="34" transform="rotate(-20 33 317)" />
+                <rect x="34" y="284" width="10" height="34" transform="rotate(-40 39 301)" />
+                <circle cx="330" cy="60" r="12" />
+                <path d="M360 120 q-10 10 -20 0" stroke="#2b0707" stroke-width="2" fill="none" />
+              </g>
+            </svg>
+          </div>
+
+          <div class="absolute -bottom-6 left-4 flex items-center gap-3">
+            <div class="w-14 h-14 rounded-full bg-black/50 border border-red-700 flex items-center justify-center">
+              <!-- small inverted cross -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M9 6h6" stroke="#ffdede" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="text-sm text-red-200/70">
+              <div class="font-semibold text-red-50">Atlas dos Sigilos</div>
+              <div class="text-xs">Coleção restrita — manuseie com cautela.</div>
+            </div>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="mt-10 border-t border-red-800/20 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="text-sm text-red-200/70">© <script>document.write(new Date().getFullYear());</script> Nocturne & Crimson — Todos os direitos sombrios reservados</div>
+        <div class="flex items-center gap-3">
+          <a href="#" class="text-xs uppercase tracking-wider title-font">Termos</a>
+          <a href="#contact" class="text-xs uppercase tracking-wider title-font">Contato</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
